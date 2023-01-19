@@ -3,9 +3,10 @@ package LinkedList.SinglyLinkedList;
 public class Solution {
 
     // 61. Rotate List (0ms runtime Beats 100%)
+    // Cases Handled: k>length and head=null
     public ListNode rotateRight(ListNode head, int k) {
         if(head==null)
-            return head;
+            return null;
         int len = length(head);
         k=len-k%len;
         if(k==0||k==len)
