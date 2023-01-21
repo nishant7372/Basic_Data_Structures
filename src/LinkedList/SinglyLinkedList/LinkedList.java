@@ -6,23 +6,20 @@ public class LinkedList {
     private final Rotate rotate;
     private final Partition partition;
     private final Insert insert;
+    private final Utility utility;
+
     public LinkedList(String name) {
         this.name = name;
         rotate = new Rotate();
         partition = new Partition();
         insert = new Insert();
+        utility=new Utility();
     }
 
     public String toString() {
-        StringBuilder sb = new StringBuilder();
         if(root==null)
             return "The Linked List is Empty...";
-        ListNode temp=root;
-        while(temp!=null){
-            sb.append(temp.val).append("->");
-            temp=temp.next;
-        }
-        return sb.toString();
+        return "Linked List: " + root.toString();
     }
 
     //append arr to linked list
@@ -52,7 +49,7 @@ public class LinkedList {
 
     //length of linked list
     public int length(){
-        return rotate.length(root);
+        return utility.length(root);
     }
 
     //partition linked list such that node<x comes in front of nodes>=x
@@ -60,5 +57,25 @@ public class LinkedList {
         root=partition.partition(root,x);
     }
 
+    //Split Linked List in Parts
+    public ListNode[] splitListToParts(int k){
+        return partition.splitListToParts(root,k);
+    }
 
+    //group nodes at even indices followed by node at odd indices
+    public void oddEvenList(){
+        root = rotate.oddEvenList(root);
+    }
+
+    public int maximum(){
+        return utility.maximum(root);
+    }
+
+    public int minimum(){
+        return utility.minimum(root);
+    }
+
+    public long sum(){return utility.sum(root);}
+
+    public long product(){return utility.product(root);}
 }
