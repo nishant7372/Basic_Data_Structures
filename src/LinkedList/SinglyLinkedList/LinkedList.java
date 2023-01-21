@@ -66,16 +66,24 @@ public class LinkedList {
     public void oddEvenList(){
         root = rotate.oddEvenList(root);
     }
-
+    
+    //maximum element in list
     public int maximum(){
         return utility.maximum(root);
     }
 
+    //minimum element in list
     public int minimum(){
         return utility.minimum(root);
     }
 
-    public long sum(){return utility.sum(root);}
+    //sum of elements of list
+    public long sum(){
+        return utility.sum(root);
+    }
 
-    public long product(){return utility.product(root);}
+    //product of elements of list
+    public long product(){
+        return utility.product(root);
+    }
 }
