@@ -1,9 +1,14 @@
 package LinkedList.SinglyLinkedList;
 
-public class Solution {
+public class Rotate{
 
-    // 61. Rotate List (0ms runtime Beats 100%)
-    // Cases Handled: k>length and head=null
+    /*
+     61. Rotate List (0ms runtime Beats 100%)
+     ### Statement--
+     Given the head of a linked list, rotate the list to the right by k places.
+
+     Cases Handled: k>length and head=null
+    */
     public ListNode rotateRight(ListNode head, int k) {
         if(head==null)
             return null;
