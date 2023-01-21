@@ -32,7 +32,7 @@ public class Main {
         boolean flag = true;
         while(flag) {
             System.out.println("""
-                    ### Insertion : 
+                    ### Insertion :\s
                     Press - :
                     1. Append Array
                     2. Add Front Array
@@ -56,7 +56,7 @@ public class Main {
         boolean flag=true;
         while(flag) {
             System.out.println("""
-                    ### Leetcode : 
+                    ### Leetcode :\s
                     Press - :
                     1. Rotate Right by k (Leetcode - 61)
                     2. Partition List (Leetcode - 86)
@@ -80,7 +80,7 @@ public class Main {
         boolean flag=true;
         while(flag) {
             System.out.println("""
-                    ### Utilities : 
+                    ### Utilities :\s
                     Press - :
                     1. Length
                     2. Maximum Element

@@ -6,6 +6,7 @@ public class ListNode {
     public ListNode(int val){
         this.val = val;
     }
+
     public ListNode(int val,ListNode next) {
         this.val = val;
         this.next = next;
@@ -14,6 +15,6 @@ public class ListNode {
     public String toString() {
         if(this.next==null)
             return (this.val)+"->";
-        return (this.val)+"->"+this.next.toString();
+        return (this.val)+"->"+ this.next;
     }
 }

@@ -19,7 +19,7 @@ public class LinkedList {
     public String toString() {
         if(root==null)
             return "The Linked List is Empty...";
-        return "Linked List: " + root.toString();
+        return "Linked List: " + root;
     }
 
     //append arr to linked list
