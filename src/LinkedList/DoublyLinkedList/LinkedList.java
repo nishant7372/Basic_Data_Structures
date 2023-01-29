@@ -1,19 +1,17 @@
-package LinkedList.SinglyLinkedList;
+package LinkedList.DoublyLinkedList;
 
 public class LinkedList {
     private final String name;
     private ListNode root;
-    private final Rotate rotate;
-    private final Partition partition;
     private final Insert insert;
+    private final Delete delete;
     private final Utility utility;
 
-    public LinkedList(String name) {
+    public LinkedList(String name){
         this.name = name;
-        rotate = new Rotate();
-        partition = new Partition();
         insert = new Insert();
-        utility=new Utility();
+        delete = new Delete();
+        utility = new Utility();
     }
 
     public String toString() {
@@ -42,40 +40,33 @@ public class LinkedList {
         root = insert.addFront(root,data);
     }
 
-    //rotate linked list right by k
-    public void rotateRight(int k){
-        root=rotate.rotateRight(root,k);
+    // delete data from list if present
+    public void delete(int data){
+        root = delete.delete(root,data);
     }
 
-    //length of linked list
-    public int length(){
-        return utility.length(root);
+    // delete data by index from list if present
+    public void deleteByIndex(int index){
+        root = delete.deleteByIndex(root,index);
     }
 
-    //partition linked list such that node<x comes in front of nodes>=x
-    public void partition(int x){
-        root=partition.partition(root,x);
-    }
+    // length of linked list
+    public int length(){return utility.length(root);}
 
-    //Split Linked List in Parts
-    public ListNode[] splitListToParts(int k){
-        return partition.splitListToParts(root,k);
-    }
-
-    //group nodes at even indices followed by node at odd indices
-    public void oddEvenList(){
-        root = rotate.oddEvenList(root);
-    }
-
+    // maximum element in linked list
     public int maximum(){
         return utility.maximum(root);
     }
 
+    //minimum element in linked list
     public int minimum(){
         return utility.minimum(root);
     }
 
+    // sum of all elements in linked list
     public long sum(){return utility.sum(root);}
 
+    // product of all elements in linked list
     public long product(){return utility.product(root);}
+
 }
