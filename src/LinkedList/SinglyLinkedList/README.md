@@ -9,6 +9,11 @@
 
 ### --> Deletion: 
 
+1. Delete Node By Data
+2. Delete All Node By Data
+3. Delete Node By Index
+4. Delete Front Node
+5. Delete End Node
 
 ### --> Reverse:
 
@@ -29,4 +34,4 @@
 2. Maximum Element
 3. Minimum Element
 4. Sum of All Elements
-5. Product of All Eleemnts
+5. Product of All Elements
