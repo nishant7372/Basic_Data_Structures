@@ -1,7 +1,4 @@
 package LinkedList.DoublyLinkedList;
-
-import java.util.List;
-
 public class ListNode {
     int val;
     ListNode prev, next;
