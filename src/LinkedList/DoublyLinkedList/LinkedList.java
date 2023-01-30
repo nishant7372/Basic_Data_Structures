@@ -50,6 +50,21 @@ public class LinkedList {
         root = delete.deleteByIndex(root,index);
     }
 
+    // delete all nodes containing data
+    public void deleteAll(int data){
+        root = delete.deleteAll(root,data);
+    }
+
+    //delete Front
+    public void deleteFront(){
+        root= delete.deleteFront(root);
+    }
+
+    //delete End
+    public void deleteEnd(){
+        root= delete.deleteEnd(root);
+    }
+
     // length of linked list
     public int length(){return utility.length(root);}
 

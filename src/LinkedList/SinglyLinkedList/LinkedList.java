@@ -7,6 +7,7 @@ public class LinkedList {
     private final Partition partition;
     private final Insert insert;
     private final Utility utility;
+    private final Delete delete;
 
     public LinkedList(String name) {
         this.name = name;
@@ -14,6 +15,7 @@ public class LinkedList {
         partition = new Partition();
         insert = new Insert();
         utility=new Utility();
+        delete = new Delete();
     }
 
     public String toString() {
@@ -78,4 +80,30 @@ public class LinkedList {
     public long sum(){return utility.sum(root);}
 
     public long product(){return utility.product(root);}
+
+    // delete by data
+    public void delete(int data){
+        root = delete.delete(root,data);
+    }
+
+    //delete From Front
+    public void deleteFront(){
+        root = delete.deleteFront(root);
+    }
+
+    //delete From End
+    public void deleteEnd(){
+        root = delete.deleteEnd(root);
+    }
+
+    //delete all nodes containing data
+    public void deleteAll(int data){
+        root = delete.deleteAll(root,data);
+    }
+
+    //delete by index
+    public void deleteByIndex(int index){
+        root = delete.deleteByIndex(root,index);
+    }
+
 }
