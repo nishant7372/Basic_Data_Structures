@@ -1,5 +1,8 @@
 package LinkedList.DoublyLinkedList;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Delete {
 
     // delete data from list if present
@@ -55,5 +58,43 @@ public class Delete {
             root=root.next;
         }
         return null;
+    }
+
+    // delete all nodes containing data
+    public ListNode deleteAll(ListNode root,int data){
+        List<ListNode> list = new ArrayList<>();
+        ListNode temp=root;
+        while(temp!=null){
+            if(temp.val==data) {
+                list.add(temp);
+            }
+            temp=temp.next;
+        }
+        for(ListNode node:list){
+            root=delete(root,node);
+        }
+        return root;
+    }
+
+    //delete Front node
+    public ListNode deleteFront(ListNode root){
+        if(root==null){
+            return null;
+        }
+        ListNode newRoot = root.next;
+        root.next=null;
+        return newRoot;
+    }
+
+    //delete End Node
+    public ListNode deleteEnd(ListNode root){
+        if(root==null){
+            return null;
+        }
+        ListNode temp = root;
+        while(temp.next!=null){
+            temp=temp.next;
+        }
+        return delete(root,temp);
     }
 }
