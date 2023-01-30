@@ -14,16 +14,18 @@ public class Main {
                 Press - :
                 0. Print
                 1. Insert
-                2. LeetCode Section
-                3. Utilities
-                4. Exit""");
+                2. Delete
+                3. LeetCode Section
+                4. Utilities
+                5. Exit""");
             int ch = scan.nextInt();
             switch (ch){
                 case 0 -> print(list);
                 case 1 -> insert(list);
-                case 2 -> leetCode(list);
-                case 3 -> utilities(list);
-                case 4 -> flag=false;
+                case 2 -> delete(list);
+                case 3 -> leetCode(list);
+                case 4 -> utilities(list);
+                case 5 -> flag=false;
             }
         }
         System.out.println("\n-----------------------------------------------------------\n");
@@ -47,6 +49,32 @@ public class Main {
                 case 3 -> appendData(list);
                 case 4 -> addFrontData(list);
                 case 5 -> {flag=false;
+                    System.out.println("going back...");}
+            }
+        }
+        System.out.println("\n-----------------------------------------------------------\n");
+    }
+    private static void delete(LinkedList list){
+        boolean flag = true;
+        while(flag) {
+            System.out.println("""
+                    ### Deletion :\s
+                    Press - :
+                    1. Delete By Data
+                    2. Delete All By Data
+                    3. Delete By Index
+                    4. Delete Front
+                    5. Delete End
+                    6. Go Back
+                    """);
+            int ch = scan.nextInt();
+            switch (ch) {
+                case 1 -> deleteByData(list);
+                case 2 -> deleteAllByData(list);
+                case 3 -> deleteByIndex(list);
+                case 4 -> deleteFront(list);
+                case 5 -> deleteEnd(list);
+                case 6 -> {flag=false;
                     System.out.println("going back...");}
             }
         }
@@ -176,6 +204,32 @@ public class Main {
     }
     private static void sum(LinkedList list){System.out.println("Sum: "+list.sum());}
     private static void product(LinkedList list){System.out.println("Product: "+list.product());}
+    private static void deleteByData(LinkedList list){
+        System.out.println("Enter data:");
+        int data = scan.nextInt();
+        list.delete(data);
+        print(list);
+    }
+    private static void deleteAllByData(LinkedList list){
+        System.out.println("Enter data:");
+        int data = scan.nextInt();
+        list.deleteAll(data);
+        print(list);
+    }
+    private static void deleteByIndex(LinkedList list){
+        System.out.println("Enter Index:");
+        int index = scan.nextInt();
+        list.deleteByIndex(index);
+        print(list);
+    }
+    private static void deleteFront(LinkedList list){
+        list.deleteFront();
+        print(list);
+    }
+    private static void deleteEnd(LinkedList list){
+        list.deleteEnd();
+        print(list);
+    }
     private static void print(LinkedList list){
         System.out.println(list.toString());
     }

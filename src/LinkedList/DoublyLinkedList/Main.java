@@ -61,13 +61,19 @@ public class Main {
                     Press - :
                     1. Delete By Data
                     2. Delete By Index
-                    3. Go Back
+                    3. Delete All By Data
+                    4. Delete Front
+                    5. Delete End
+                    6. Go Back
                     """);
             int ch = scan.nextInt();
             switch (ch) {
                 case 1 -> deleteByData(list);
                 case 2 -> deleteByIndex(list);
-                case 3 -> {flag=false;
+                case 3 -> deleteAllByData(list);
+                case 4 -> deleteFront(list);
+                case 5 -> deleteEnd(list);
+                case 6 -> {flag=false;
                     System.out.println("going back...");}
             }
         }
@@ -155,10 +161,24 @@ public class Main {
         list.delete(data);
         print(list);
     }
+    private static void deleteAllByData(LinkedList list){
+        System.out.println("Enter data:");
+        int data = scan.nextInt();
+        list.deleteAll(data);
+        print(list);
+    }
     private static void deleteByIndex(LinkedList list){
         System.out.println("Enter Index:");
         int index = scan.nextInt();
         list.deleteByIndex(index);
+        print(list);
+    }
+    private static void deleteFront(LinkedList list){
+        list.deleteFront();
+        print(list);
+    }
+    private static void deleteEnd(LinkedList list){
+        list.deleteEnd();
         print(list);
     }
     private static void length(LinkedList list){
