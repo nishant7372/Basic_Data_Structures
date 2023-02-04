@@ -1,7 +1,7 @@
 package LinkedList.DoublyLinkedList;
 public class ListNode {
-    int val;
-    ListNode prev, next;
+    public int val;
+    public ListNode prev, next;
     public ListNode(int val){
         this.val = val;
     }

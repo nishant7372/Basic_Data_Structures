@@ -1,8 +1,10 @@
-package LinkedList.SinglyLinkedList;
+package LinkedList.SinglyLinkedList.Operations;
+
+import LinkedList.SinglyLinkedList.ListNode;
 
 public class Insert {
     //append arr to end of linked list
-    public ListNode append(ListNode root,int[] arr) {
+    public ListNode append(ListNode root, int[] arr) {
         ListNode head=new ListNode(arr[0]);
         ListNode temp=head;
         for(int i=1;i<arr.length;i++) {

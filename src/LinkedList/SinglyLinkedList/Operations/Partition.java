@@ -1,4 +1,6 @@
-package LinkedList.SinglyLinkedList;
+package LinkedList.SinglyLinkedList.Operations;
+
+import LinkedList.SinglyLinkedList.ListNode;
 
 public class Partition {
 /*

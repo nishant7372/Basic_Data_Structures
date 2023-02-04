@@ -1,4 +1,6 @@
-package LinkedList.DoublyLinkedList;
+package LinkedList.SinglyLinkedList.Operations;
+
+import LinkedList.SinglyLinkedList.ListNode;
 
 public class Utility {
     public int length(ListNode head){

@@ -1,5 +1,7 @@
 package LinkedList.DoublyLinkedList;
 
+import LinkedList.DoublyLinkedList.Operations.* ;
+
 public class LinkedList {
     private final String name;
     private ListNode root;

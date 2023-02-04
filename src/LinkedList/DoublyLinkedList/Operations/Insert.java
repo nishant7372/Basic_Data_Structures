@@ -1,9 +1,11 @@
-package LinkedList.DoublyLinkedList;
+package LinkedList.DoublyLinkedList.Operations;
+
+import LinkedList.DoublyLinkedList.ListNode;
 
 public class Insert {
 
     //add data to front of linked list
-    public ListNode addFront(ListNode root,int data){
+    public ListNode addFront(ListNode root, int data){
         return addFront(root,new ListNode(data));
     }
 

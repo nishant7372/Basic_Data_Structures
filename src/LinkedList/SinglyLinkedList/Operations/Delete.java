@@ -1,8 +1,10 @@
-package LinkedList.SinglyLinkedList;
+package LinkedList.SinglyLinkedList.Operations;
+
+import LinkedList.SinglyLinkedList.ListNode;
 
 public class Delete {
     // delete by data
-    public ListNode delete(ListNode root,int data){
+    public ListNode delete(ListNode root, int data){
         if(root==null)
             return null;
         if(root.val==data){

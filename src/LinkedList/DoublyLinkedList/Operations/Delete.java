@@ -1,4 +1,6 @@
-package LinkedList.DoublyLinkedList;
+package LinkedList.DoublyLinkedList.Operations;
+
+import LinkedList.DoublyLinkedList.ListNode;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +8,7 @@ import java.util.List;
 public class Delete {
 
     // delete data from list if present
-    public ListNode delete(ListNode root,int data){
+    public ListNode delete(ListNode root, int data){
         ListNode node = search(root,data);
         if(node!=null){
             return delete(root,node);

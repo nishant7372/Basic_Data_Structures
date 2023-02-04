@@ -1,5 +1,7 @@
 package LinkedList.SinglyLinkedList;
 
+import LinkedList.SinglyLinkedList.Operations.*;
+
 public class LinkedList {
     private final String name;
     private ListNode root;
