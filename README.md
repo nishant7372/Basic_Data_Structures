@@ -1,5 +1,5 @@
 ## Basic_Data_Structures
-Basic Data Structures + LeetCode
+Basic Data Structures + LeetCode Problem Approaches
 
 ### --> Linked List
 1. Singly LinkedList
