@@ -5,3 +5,6 @@ Basic Data Structures + LeetCode
 1. Singly LinkedList
 2. Doubly LinkedList
 3. Circular LinkedList (not Updated)
+
+### --> Stack
+1. Java.util.Stack (Java Stack Class)
