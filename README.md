@@ -7,4 +7,9 @@ Basic Data Structures + LeetCode Problem Approaches
 3. Circular LinkedList (not Updated)
 
 ### --> Stack
-1. Java.util.Stack (Java Stack Class)
+1. Stack using Array
+2. Java.util.Stack (Java Stack Class) 
+
+### --> Deque (Double Ended Queue)
+1. Java.util.Deque using ArrayDeque (Java Deque Class)
+
