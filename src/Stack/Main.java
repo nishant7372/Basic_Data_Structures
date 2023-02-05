@@ -10,12 +10,41 @@ public class Main {
         while(flag) {
             System.out.println("""
                     Press - :
-                    1. Utils
-                    2. Exit""");
+                    1. Stack Operations
+                    2. Utils
+                    3. Exit""");
             int ch = scan.nextInt();
             switch (ch) {
-                case 1 -> utils();
-                case 2 -> flag = false;
+                case 1 -> stack();
+                case 2 -> utils();
+                case 3 -> flag = false;
+            }
+        }
+    }
+
+    private static void stack(){
+        System.out.println("Enter Size:");
+        int size = scan.nextInt();
+        Stack stack = new Stack(size);
+        boolean flag = true;
+        while(flag) {
+            System.out.println("""
+                    Press - :
+                    1. Push
+                    2. Pop
+                    3. Peek
+                    4. IsEmpty
+                    5. IsFull
+                    6. Exit""");
+            int ch = scan.nextInt();
+            switch (ch) {
+                case 1 -> push(stack);
+                case 2 -> pop(stack);
+                case 3 -> peek(stack);
+                case 4 -> isEmpty(stack);
+                case 5 -> isFull(stack);
+                case 6 -> printStack(stack);
+                case 7 -> flag = false;
             }
         }
     }
@@ -42,6 +71,37 @@ public class Main {
             }
         }
     }
+
+    private static void push(Stack stack){
+        System.out.println("Enter data:");
+        int data = scan.nextInt();
+        stack.push(data);
+        printStack(stack);
+    }
+
+    private static void pop(Stack stack){
+        Integer poppedItem = stack.pop();
+        System.out.println("Popped Item: "+ poppedItem);
+        printStack(stack);
+    }
+
+    private static void peek(Stack stack){
+        Integer topItem = stack.peek();
+        System.out.println("Top Item: "+ topItem);
+    }
+
+    private static void isEmpty(Stack stack){
+        System.out.println("Stack is Empty? : "+ stack.isEmpty());
+    }
+
+    private static void isFull(Stack stack){
+        System.out.println("Stack is Full? : "+ stack.isFull());
+    }
+
+    private static void printStack(Stack stack){
+        stack.print();
+    }
+
     private static int[] inputArray(){
         System.out.println("Input Array:");
         System.out.println("Enter Size:");
