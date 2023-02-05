@@ -9,6 +9,6 @@
    6. Print (Stack Representation)
    
 
-2. Utilities ([Using Java.util.Stack](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/Stack.html))
+2. Utilities (Using [Java.util.Stack](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/Stack.html))
 
 (For Solving LeetCode Easy + medium + Hard Stack Problems)
