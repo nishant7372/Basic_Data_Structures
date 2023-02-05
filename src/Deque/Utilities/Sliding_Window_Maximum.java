@@ -12,7 +12,8 @@ import java.util.Deque;
 public class Sliding_Window_Maximum {
     public int[] slidingWindowMaximum(int[] nums, int k) {
         int[] res = new int[nums.length-k+1];
-
+        if(k == 0 || k > nums.length)
+            return res;
         Deque<Integer> queue = new ArrayDeque<>();
 
         for(int i=0;i<k;i++){
