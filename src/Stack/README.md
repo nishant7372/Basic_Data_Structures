@@ -1,18 +1,14 @@
-### --> Utilities
-Helpful in solving Various Stack Problems
+### --> Stack
 
-1. Next Greater Element
-2. Previous Greater Element
-3. Next Smaller Element
-4. Previous Smaller Element
+1. Stack Class (Array)
+   1. Push 
+   2. Pop
+   3. Peek
+   4. IsEmpty?
+   5. IsFull?
+   6. Print (Stack Representation)
+   
 
-***LeetCode Problems Involving Above Methods:***
+2. Utilities (Using Java.util.Stack[](https://docs.oracle.com/en/java/javase/18/docs/api/java.base/java/util/Stack.html))
 
-84. Largest Rectangle in Histogram *42.4%* *Hard*
-85. Maximal Rectangle *44.5%* *Hard*
-496. Next Greater Element I *71.5%* *Easy*
-503. Next Greater Element II *63.2%* *Medium*
-739. Daily Temperatures *66.3%* *Medium*
-901. Online Stock Span *65.3%* *Medium*
-907. Sum of Subarray Minimums *35.9%* *Medium*
-1793. Maximum Score of a Good Subarray *53.6%* *Hard*
+(For Solving LeetCode Easy + medium + Hard Stack Problems)
