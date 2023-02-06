@@ -35,7 +35,8 @@ public class Main {
                     3. Peek
                     4. IsEmpty
                     5. IsFull
-                    6. Exit""");
+                    6. Print Stack
+                    7. Exit""");
             int ch = scan.nextInt();
             switch (ch) {
                 case 1 -> push(stack);
@@ -75,19 +76,24 @@ public class Main {
     private static void push(Stack stack){
         System.out.println("Enter data:");
         int data = scan.nextInt();
-        stack.push(data);
+        if(!stack.push(data))
+            System.out.println("Can't Push. Stack is Full.");
         printStack(stack);
     }
 
     private static void pop(Stack stack){
         Integer poppedItem = stack.pop();
         System.out.println("Popped Item: "+ poppedItem);
+        if(poppedItem==null)
+            System.out.println("Stack is Empty");
         printStack(stack);
     }
 
     private static void peek(Stack stack){
         Integer topItem = stack.peek();
         System.out.println("Top Item: "+ topItem);
+        if(topItem==null)
+            System.out.println("Stack is Empty");
     }
 
     private static void isEmpty(Stack stack){
@@ -113,6 +119,7 @@ public class Main {
         }
         return arr;
     }
+
     private static void nextGreaterElement(Utils utils,int[] arr){
         Integer[] nextGreaterElement = utils.nextGreaterElement(arr);
         Integer[] nextGreaterElementIndex = utils.nextGreaterElementIndex(arr);
