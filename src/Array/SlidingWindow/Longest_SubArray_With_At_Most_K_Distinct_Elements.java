@@ -53,7 +53,7 @@ public class Longest_SubArray_With_At_Most_K_Distinct_Elements {
         for(int i=0;i<nums.length;i++){
             map.put(nums[i],map.getOrDefault(nums[i],0)+1);
 
-            while(map.keySet().size()>k) {
+            while(map.size()>k) {
                 map.put(nums[j], map.get(nums[j]) - 1);
                 if (map.get(nums[j]) == 0)
                     map.remove(nums[j]);
@@ -71,7 +71,7 @@ public class Longest_SubArray_With_At_Most_K_Distinct_Elements {
         for(int i=0;i<nums.length;i++) {
             map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
 
-            while (map.keySet().size() > k) {
+            while (map.size() > k) {
                 map.put(nums[j], map.get(nums[j]) - 1);
                 if (map.get(nums[j]) == 0)
                     map.remove(nums[j]);
