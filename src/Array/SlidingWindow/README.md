@@ -19,10 +19,10 @@
 
 
 #### --> LeetCode Problems:
-
-159. Longest Substring with At Most Two Distinct Characters -- ***Medium***
-340. Longest Substring with At Most K Distinct Characters -- ***Medium***
-904. Fruit Into Baskets -- ***Medium***
-992. Subarrays with K Different Integers -- ***Hard***
-1248. Count Number of Nice SubArrays -- ***Medium***
-2302. Count Subarrays With Score Less Than K -- ***Hard***
+###### 159. Longest Substring with At Most Two Distinct Characters -- ***Medium***
+###### 340. Longest Substring with At Most K Distinct Characters -- ***Medium***
+###### 904. Fruit Into Baskets -- ***Medium***
+###### 930. Binary Subarrays With Sum -- ***Medium***
+###### 992. Subarrays with K Different Integers -- ***Hard***
+###### 1248. Count Number of Nice SubArrays -- ***Medium***
+###### 2302. Count Subarrays With Score Less Than K -- ***Hard***
