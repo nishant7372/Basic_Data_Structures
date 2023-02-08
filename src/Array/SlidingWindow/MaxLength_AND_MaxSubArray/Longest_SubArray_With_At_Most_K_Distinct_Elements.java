@@ -1,4 +1,4 @@
-package Array.SlidingWindow;
+package Array.SlidingWindow.MaxLength_AND_MaxSubArray;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -6,9 +6,10 @@ import java.util.Map;
 
 public class Longest_SubArray_With_At_Most_K_Distinct_Elements {
 
-    // if 0<=nums[i]<=10^5
-    // Use HashTable
-    public int lengthOfLongestSubArrayWithAtMostKDistinctElements(int[] nums,int k) {
+    // 1. HashTable if 0<=nums[i]<=10^5
+
+    //a. Max Length
+    public int lengthOfLongestSubArrayWithAtMostKDistinctElements_Table(int[] nums,int k) {
         int[] freq = new int[nums.length]; //0 <= nums[i] < nums.length
         int j=0, max=0, unique=0;
         for(int i=0;i<nums.length;i++){
@@ -24,7 +25,8 @@ public class Longest_SubArray_With_At_Most_K_Distinct_Elements {
         return max;
     }
 
-    public int[] longestSubArrayWithAtMostKDistinctElements(int[] nums,int k) {
+    //b. Max Length SubArray
+    public int[] longestSubArrayWithAtMostKDistinctElements_Table(int[] nums,int k) {
         int[] freq = new int[nums.length]; //0 <= nums[i] < nums.length
         int j=0, max=0, unique=0;
         int left=0, right=0;
@@ -45,9 +47,10 @@ public class Longest_SubArray_With_At_Most_K_Distinct_Elements {
         return Arrays.copyOfRange(nums, left, right+1);
     }
 
-    // nums[i]<0 || nums[i]>10^5
-    // Use HashMap
-    public int lengthOfLongestSubArrayWithAtMostKDistinctElements2(int[] nums,int k) {
+    // 2. HashMap if nums[i]<0 || nums[i]>10^5
+
+    //a. Max Length
+    public int lengthOfLongestSubArrayWithAtMostKDistinctElements_Map(int[] nums,int k) {
         Map<Integer,Integer> map = new HashMap<>();
         int j=0, max=0;
         for(int i=0;i<nums.length;i++){
@@ -64,7 +67,8 @@ public class Longest_SubArray_With_At_Most_K_Distinct_Elements {
         return max;
     }
 
-    public int[] longestSubArrayWithAtMostKDistinctElements2(int[] nums,int k) {
+    // b. Max Length SubArray
+    public int[] longestSubArrayWithAtMostKDistinctElements_Map(int[] nums,int k) {
         Map<Integer,Integer> map = new HashMap<>();
         int j=0, max=0;
         int left=0, right=0;
