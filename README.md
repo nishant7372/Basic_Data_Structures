@@ -2,7 +2,7 @@
 Basic Data Structures + LeetCode Problem Approaches
 
 ### --> Array
-1. Sliding Window
+1. Sliding Window (Count, Max Length, Max Length SubArray)
 
 ### --> Linked List
 1. Singly LinkedList (Insert, Delete & Utils)
