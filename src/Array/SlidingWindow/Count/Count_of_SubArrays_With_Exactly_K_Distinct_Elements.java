@@ -9,12 +9,12 @@ public class Count_of_SubArrays_With_Exactly_K_Distinct_Elements {
     // At Most (K - 1) distinct elements.
 
     // 1. HashTable for smaller constraints +ves only
-    public int countOfSubArraysWithExactlyKDistinctElementsTable(int[] nums,int k){
+    public int countOfSubArraysWithExactlyKDistinctElements_Table(int[] nums,int k){
         return AtMostK_Table(nums,k)-AtMostK_Table(nums,k-1);
     }
 
     // 2. HashMap for larger constraints including -ves
-    public int countOfSubArraysWithExactlyKDistinctElementsMap(int[] nums,int k){
+    public int countOfSubArraysWithExactlyKDistinctElements_Map(int[] nums,int k){
         return AtMostK_Map(nums,k)-AtMostK_Map(nums,k-1);
     }
 
