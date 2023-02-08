@@ -2,10 +2,13 @@ package Array;
 
 import java.util.Arrays;
 import java.util.Scanner;
-import Array.SlidingWindow.*;
+
+import Array.SlidingWindow.MaxLength_AND_MaxSubArray.Longest_SubArray_With_At_Most_K_Distinct_Elements;
+import Array.SlidingWindow.MaxLength_AND_MaxSubArray.Longest_SubArray_With_Exactly_K_Distinct_Elements;
+
 public class Main {
     static Scanner scan = new Scanner(System.in);
-    static Longest_SubArray_With_K_Distinct_Elements l = new Longest_SubArray_With_K_Distinct_Elements();
+    static Longest_SubArray_With_Exactly_K_Distinct_Elements l = new Longest_SubArray_With_Exactly_K_Distinct_Elements();
     static Longest_SubArray_With_At_Most_K_Distinct_Elements l2 = new Longest_SubArray_With_At_Most_K_Distinct_Elements();
     public static void main(String[] args) {
         longestSubArrayWithKDistinctElements();
