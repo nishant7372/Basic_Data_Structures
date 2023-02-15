@@ -5,9 +5,9 @@ Basic Data Structures + LeetCode Problem Approaches
 1. Sliding Window (Count, Max Length, Max Length SubArray)
 
 ### --> Linked List
-1. Singly LinkedList (Insert, Delete & Utils)
-2. Doubly LinkedList (Insert, Delete, Rotate, Partition & Utils)
-3. Circular LinkedList (not Updated)
+1. Singly LinkedList (Insert, Delete, Rotate, Partition & Utils)
+2. Doubly LinkedList (Insert, Delete & Utils)
+3. Circular LinkedList (Insert, Delete & Utils)
 
 ### --> Stack
 1. Stack using Array
