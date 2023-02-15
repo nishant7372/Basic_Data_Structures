@@ -3,6 +3,8 @@ Basic Data Structures + LeetCode Problem Approaches
 
 ### --> Array
 1. Sliding Window (Count, Max Length, Max Length SubArray)
+2. Binary Search (Binary Search, Lower Bound & Upper Bound)
+3. Ternary Search
 
 ### --> Linked List
 1. Singly LinkedList (Insert, Delete, Rotate, Partition & Utils)
