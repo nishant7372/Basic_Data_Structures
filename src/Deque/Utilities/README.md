@@ -1,8 +1,8 @@
 ### --> Utilities
 
 For Solving Sliding Window Problems
-1. Sliding Window Maximum
-2. Sliding Window Minimum
+1. [x] Sliding Window Maximum
+2. [x] Sliding Window Minimum
 
 **_LeetCode Question:_**
 

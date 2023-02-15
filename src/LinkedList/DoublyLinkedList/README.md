@@ -9,20 +9,20 @@
 
 ### --> Deletion:
 
-1. Delete Node By Data
-2. Delete All Node By Data
-3. Delete Node By Index
-4. Delete Front Node
-5. Delete End Node
+1. [x] Delete Node By Data
+2. [x] Delete All Node By Data
+3. [x] Delete Node By Index
+4. [x] Delete Front Node
+5. [x] Delete End Node
 
 ### --> Reverse:
 
 
 ### --> Utility:
 
-1. Length of Linked List
-2. Maximum Element
-3. Minimum Element
-4. Sum of All Elements
-5. Product of All Elements
+1. [x] Length of Linked List
+2. [x] Maximum Element
+3. [x] Minimum Element
+4. [x] Sum of All Elements
+5. [x] Product of All Elements
 
