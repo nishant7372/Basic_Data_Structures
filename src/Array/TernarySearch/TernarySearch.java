@@ -17,12 +17,12 @@ public class TernarySearch {
                 return mid2;
             }
             if(arr[mid1]>target){
-                j=mid1-1;     // checking in first part (i -> mid1-1)
+                j=mid1-1;     // searching in first part (i -> mid1-1)
             }
             else if(arr[mid2]<target){
-                i=mid2+1;     // checking in third part  (mid2+1 -> j)
+                i=mid2+1;     // searching in third part  (mid2+1 -> j)
             }
-            else{             // checking in second part  (mid1+1 -> mid2-1)
+            else{             // searching in second part  (mid1+1 -> mid2-1)
                 i=mid1+1;
                 j=mid2-1;
             }
@@ -43,15 +43,15 @@ public class TernarySearch {
             }
             if(arr[mid1]>target){
                 return ternarySearch_Recursive(arr,target,i,mid1-1);
-                // checking in first part (i -> mid1-1)
+                // searching in first part (i -> mid1-1)
             }
             else if(arr[mid2]<target){
                 return ternarySearch_Recursive(arr,target,mid2+1,j);
-                // checking in third part  (mid2+1 -> j)
+                // searching in third part  (mid2+1 -> j)
             }
             else{
                 return ternarySearch_Recursive(arr,target,mid1+1,mid2-1);
-                // checking in second part  (mid1+1 -> mid2-1)
+                // searching in second part  (mid1+1 -> mid2-1)
             }
         }
         return -1;
