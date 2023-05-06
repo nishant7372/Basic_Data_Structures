@@ -116,4 +116,7 @@ public class LinkedList {
         root = reverse.reverseList(root);
     }
 
+    public void reverseBetween(int left,int right){
+        root = reverse.reverseBetween(root,left,right);
+    }
 }

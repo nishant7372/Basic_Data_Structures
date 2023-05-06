@@ -89,12 +89,14 @@ public class Main {
                     ### Reverse :\s
                     Press - :
                     1. ReverseList
-                    2. Go Back
+                    2. ReverseBetween
+                    3. Go Back
                     """);
             int ch = scan.nextInt();
             switch (ch) {
                 case 1 -> reverseList(list);
-                case 2 -> {flag=false;
+                case 2 -> reverseListBetween(list);
+                case 3 -> {flag=false;
                     System.out.println("going back...");}
             }
         }
@@ -252,6 +254,14 @@ public class Main {
     }
     private static void reverseList(LinkedList list){
         list.reverse();
+        print(list);
+    }
+    private static void reverseListBetween(LinkedList list){
+        System.out.print("Left: ");
+        int left = scan.nextInt();
+        System.out.print("Right: ");
+        int right = scan.nextInt();
+        list.reverseBetween(left,right);
         print(list);
     }
     private static void print(LinkedList list){

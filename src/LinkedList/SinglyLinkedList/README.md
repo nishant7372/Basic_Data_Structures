@@ -17,7 +17,8 @@
 
 ### --> Reverse:
 
-1. [x] Leetcode - 206. Reverse Linked List
+1. [x] Leetcode - 206. Reverse Linked List (Recursive)
+2. [x] Leetcode - 92. Reverse Linked List II (Recursive)
 
 ### --> Partition:
 
