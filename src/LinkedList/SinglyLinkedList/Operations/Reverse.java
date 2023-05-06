@@ -6,10 +6,10 @@ public class Reverse {
 
     // 0ms runtime, Beats 100%
     // TC -> O(n)
-    ListNode root = null;
+    ListNode root;
     public ListNode reverseList(ListNode head) {
         if(head==null)
-            return head;
+            return null;
         reverse(head).next = null;
         return root;
     }
