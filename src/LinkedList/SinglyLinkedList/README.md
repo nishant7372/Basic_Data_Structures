@@ -17,6 +17,7 @@
 
 ### --> Reverse:
 
+1. [x] Leetcode - 206. Reverse Linked List
 
 ### --> Partition:
 
