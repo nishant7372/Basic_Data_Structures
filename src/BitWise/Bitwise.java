@@ -71,4 +71,19 @@ public class Bitwise {
         }
         return neg? 1/ans : ans;
     }
+
+    private long power(long x, int y)
+    {
+        int mod  = 1000000007;
+        long res = 1;
+
+        while (y > 0)
+        {
+            if ((y & 1) != 0)
+                res = (res * x) % mod;
+            y = y >> 1;
+            x = (x * x) % mod;
+        }
+        return res;
+    }
 }
