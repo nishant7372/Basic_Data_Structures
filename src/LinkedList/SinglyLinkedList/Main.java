@@ -15,17 +15,19 @@ public class Main {
                 0. Print
                 1. Insert
                 2. Delete
-                3. LeetCode Section
-                4. Utilities
-                5. Exit""");
+                3. Reverse
+                4. LeetCode Section
+                5. Utilities
+                6. Exit""");
             int ch = scan.nextInt();
             switch (ch){
                 case 0 -> print(list);
                 case 1 -> insert(list);
                 case 2 -> delete(list);
-                case 3 -> leetCode(list);
-                case 4 -> utilities(list);
-                case 5 -> flag=false;
+                case 3 -> reverse(list);
+                case 4 -> leetCode(list);
+                case 5 -> utilities(list);
+                case 6 -> flag=false;
             }
         }
         System.out.println("\n-----------------------------------------------------------\n");
@@ -75,6 +77,24 @@ public class Main {
                 case 4 -> deleteFront(list);
                 case 5 -> deleteEnd(list);
                 case 6 -> {flag=false;
+                    System.out.println("going back...");}
+            }
+        }
+        System.out.println("\n-----------------------------------------------------------\n");
+    }
+    private static void reverse(LinkedList list){
+        boolean flag = true;
+        while(flag) {
+            System.out.println("""
+                    ### Reverse :\s
+                    Press - :
+                    1. ReverseList
+                    2. Go Back
+                    """);
+            int ch = scan.nextInt();
+            switch (ch) {
+                case 1 -> reverseList(list);
+                case 2 -> {flag=false;
                     System.out.println("going back...");}
             }
         }
@@ -228,6 +248,10 @@ public class Main {
     }
     private static void deleteEnd(LinkedList list){
         list.deleteEnd();
+        print(list);
+    }
+    private static void reverseList(LinkedList list){
+        list.reverse();
         print(list);
     }
     private static void print(LinkedList list){

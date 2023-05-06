@@ -10,6 +10,7 @@ public class LinkedList {
     private final Insert insert;
     private final Utility utility;
     private final Delete delete;
+    private final Reverse reverse;
 
     public LinkedList(String name) {
         this.name = name;
@@ -18,6 +19,7 @@ public class LinkedList {
         insert = new Insert();
         utility=new Utility();
         delete = new Delete();
+        reverse = new Reverse();
     }
 
     public String toString() {
@@ -106,6 +108,12 @@ public class LinkedList {
     //delete by index
     public void deleteByIndex(int index){
         root = delete.deleteByIndex(root,index);
+    }
+
+
+    // reverse
+    public void reverse(){
+        root = reverse.reverseList(root);
     }
 
 }
